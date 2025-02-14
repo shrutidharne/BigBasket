@@ -1,0 +1,124 @@
+.carousel {
+  margin-top: 2%;
+}
+
+.CarouselImage {
+  height: 38.3vh;
+  object-fit: cover;
+}
+
+h3 {
+  margin-top: 5%;
+  margin-left: 3%;
+  font-family: "Roboto";
+}
+
+.brandsDiv {
+  display: flex;
+
+  /* justify-content: center; */
+  overflow-x: scroll;
+  overflow-y: hidden;
+  /* scroll-snap-type: x mandatory; */
+  width: 76.5vw;
+  margin-left: 12%;
+  margin-top: 2vmax;
+  /* scrollbar-gutter: stable; */
+}
+
+.brandsDiv::-webkit-scrollbar {
+  height: 5px;
+}
+
+.brandsDiv::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.brandsDiv::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.311);
+  border-radius: 8px;
+}
+
+.brandsDiv::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.507);
+}
+.brandsContainer{
+  display: flex;
+  
+}
+.brandImg {
+  /* margin-top: 5%; */
+  margin-right: 8%;
+  scroll-snap-align: center;
+  width: 100%;
+}
+
+.brandImg:last-child {
+  margin-right: 0;
+}
+
+.brandImg > img {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.479);
+  border-radius: 3%;
+  width: 20vw;
+}
+
+.productsDiv {
+  display: flex;
+  margin: 2vmax auto;
+  width: 70vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  overflow-y: scroll;
+  height: 110vh;
+}
+
+.productsDiv::-webkit-scrollbar {
+  width: 8px;
+}
+
+.productsDiv::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.productsDiv::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.311);
+  border-radius: 8px;
+}
+
+.productsDiv::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.507);
+}
+@media screen and (max-width: 1800px) {
+  .CarouselImage {
+    /* transform: scale(0.8); */
+    height: auto;
+    width: 100vw;
+  }
+  .carousel {
+    height: auto;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .productsDiv {
+    width: 70vw;
+  }
+}
+@media screen and (max-width: 800px) {
+  .brandImg {
+    transform: scale(0.8);
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  .productsDiv {
+    margin: 2vmax auto;
+    width: 90vw;
+  }
+}
+@media screen and(max-width:375px) {
+  .productsDiv {
+    margin: 0;
+    /* width: ; */
+  }
+}

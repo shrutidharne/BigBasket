@@ -1,0 +1,45 @@
+.sidebar {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  /* width: 10vmax; */
+}
+
+.sidebar > a:first-child {
+  padding: 0;
+  text-align: center;
+  font-size: 1vmax;
+  margin-bottom: 2vmax;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.493);
+  font: 500 1rem "Roboto";
+  margin: 2rem;
+  transition: all 0.5s;
+  font-size: 1vmax;
+}
+
+.sidebar a:hover {
+  color: rgb(38, 165, 65);
+  transform: scale(1);
+}
+
+.sidebar a > p {
+  display: flex;
+  align-items: center;
+}
+.sidebar > a div {
+  font-size: 1vmax;
+}
+.sidebar a > p > svg {
+  margin-right: 0.5rem;
+  font-size: 1vmax;
+}
+@media screen and (max-width:600px) {
+  .sidebar a{
+    font-size: unset;
+  }
+}

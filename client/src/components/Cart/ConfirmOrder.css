@@ -1,0 +1,195 @@
+.confirmOrderPage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.productListDiv1 {
+  border: 1px solid rgb(154, 154, 154);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  margin: 3% 5%;
+}
+
+.productListDiv1 {
+  font-size: 1.3vmax;
+}
+
+.confirmShippingAreaBox {
+  border: 1px solid rgb(154, 154, 154);
+  border-radius: 30px;
+  height: 15vmax;
+  margin: 3% 5%;
+  padding: 2%;
+}
+
+.confirmShippingAreaBox > div > p {
+  line-height: 1.5;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.685);
+  font-size: 1.2vmax;
+}
+
+.confirmShippingArea {
+  width: 70%;
+}
+
+.orderOverview {
+  margin: 3% 8%;
+  font-size: 1.8vmax;
+}
+
+.shippingInfo > h1 {
+  margin: 2% 5%;
+}
+
+.addressHeader {
+  font-size: 2.5vmax;
+}
+
+.addressHeader > hr {
+  margin: 2% 0;
+}
+
+.confirmCartItemsContainer > div > img {
+  height: 20vh;
+  width: 20vw;
+}
+
+.orderSummary {
+  border: 1px solid rgb(154, 154, 154);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  height: 20vmax;
+  margin: 25% 3% 0 1%;
+  padding: 2%;
+}
+
+.orderSummary > h1 {
+  font-size: 1.8vmax;
+  padding: 2%;
+}
+
+.orderSummaryContainer {
+  width: 35%;
+  font-size: 1vmax;
+}
+
+.price {
+  margin-top: 2%;
+  font-size: 1.4vmax;
+}
+
+.price > p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.price > hr {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.subtotal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 5% 0;
+}
+
+.subtotal > h1 {
+  font-size: 1.5vmax;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.728);
+}
+
+.gst {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 5% 0;
+}
+
+.gst > h1 {
+  font-size: 1.5vmax;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.728);
+}
+
+.totalPrice {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 5% 0;
+}
+
+.totalPrice > h1 {
+  font-size: 1.5vmax;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.728);
+}
+
+.proceedToPayment {
+  border: 1px solid rgb(154, 154, 154);
+  border-radius: 50px;
+  background-color: rgb(38, 165, 65);
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.5vmax;
+  text-align: center;
+  margin: 10% 0 0 10%;
+  height: 4vmax;
+  width: 80%;
+  transition: all 0.5s;
+}
+.proceedToPayment:hover {
+  background-color: rgb(32, 135, 54);
+}
+
+.subtotalPrice {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 20%;
+}
+
+.subtotalPrice > h3 {
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.878);
+}
+
+@media screen and (max-width: 750px) {
+  .confirmOrderPage {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .confirmShippingArea {
+    width: 90%;
+  }
+  .orderSummaryContainer {
+    width: 60%;
+  }
+
+  .orderSummary {
+    height: 30vmax;
+    border-radius: 10px;
+  }
+  .confirmShippingAreaBox {
+    border-radius: 10px;
+  }
+
+  .productListDiv1 {
+    border-radius: 10px;
+  }
+
+  .proceedToPayment {
+    margin-bottom: 111vmax;
+  }
+}

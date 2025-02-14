@@ -1,0 +1,139 @@
+.addToCart {
+    position: absolute;
+    bottom: 0;
+    height: 2vmax;
+    border-radius: 50px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5%;
+    align-items: center;
+    border: 1px solid rgba(88, 87, 87, 0.567);
+    width: 11.5vmax;
+    margin-bottom: 5%;
+    background-color: rgb(38, 165, 65);
+}
+
+.addToCart>p {
+    font-weight: 500;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    font-size: 1.15vmax;
+}
+
+.addToCart>span {
+    font-weight: 800;
+    font-family: "Roboto";
+    font-size: 1.5vmax;
+    color: rgb(255, 255, 255);
+}
+
+.price {
+    font-family: "Roboto";
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+/* .productCard {
+    align-items: center;
+    border: 0.5px solid rgba(133, 126, 126, 0.749);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 41.5vh;
+    margin: 2% 3%;
+    padding-top: 2%;
+    width: 13vw;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+} */
+
+
+
+
+.productInfo>p:nth-child(2) {
+    font-family: "Roboto";
+    text-decoration: none;
+    font-size: 1.1vmax;
+    color: rgb(92, 92, 92);
+    text-align: left;
+    
+    position: absolute;
+    bottom: 23%;
+    left: 5%;
+}
+.productInfo>p:nth-child(4) {
+    font-family: "Roboto";
+    text-decoration: none;
+    font-size: 1.1vmax;
+    color: rgb(92, 92, 92);
+    text-align: left;
+    
+    position: absolute;
+    left: 5%;
+    bottom: 16%;
+}
+
+.productInfo {
+    position: relative;
+    height: 23vmax;
+    border: 0.5px solid rgba(133, 126, 126, 0.749);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2% 3%;
+    padding-top: 2%;
+    width: 13vmax;
+    
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.productInfo>img {
+    height: 12vmax;
+    width: 12vmax;
+}
+
+
+.quantityDiv2{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 2%;
+    right: 20%;
+    align-items:center;
+    justify-content: center;
+    align-content: center;
+}
+.minus1{
+
+    color:  rgb(38, 165, 65);
+    transform: scale(1.5);
+}
+.add1{
+    color:  rgb(38, 165, 65);
+    transform: scale(1.5);
+    margin-left: 2%;
+}
+.number1{
+    font-size: 1vmax;
+    width: 2vw;
+    border: none;
+    text-align: center;
+    margin-left: 1%;
+    margin-bottom: 5%;
+}
+@media screen and (max-width:900px) {
+    .add1, .minus1{
+        transform: scale(1);
+    }
+    .quantityDiv2{
+        bottom: 1%;
+    }
+}
+@media screen and (max-width:600px) {
+    .quantityDiv2{
+        bottom: -1%;
+    }
+}

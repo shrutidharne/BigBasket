@@ -1,0 +1,144 @@
+
+.welcome{
+    margin-bottom: 100%;
+}
+.auth-container1{
+    transform: scale(1.1);
+    margin-bottom: 4%;
+    margin-left: 10%;
+    margin-top: 0.5%;
+    width: 23vmax;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8%;
+    height:40vmax;
+    font-size: 1vmax;
+}
+.auth-container1 h1{
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+.auth-container1 h2{
+    margin-top: 10%;
+    margin-bottom: 3%;
+}
+.auth-container1 >p{
+    margin: 0 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: 0.9vmax;
+}
+.phoneNO{
+    font-size: 0.9vmax;
+    font-weight: 500;
+    margin-right: 20%;
+}
+.phoneNO > a{
+    text-decoration: underline;
+    color:#4A7DFF;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.field-holder{
+    position: relative;
+    margin-top:10%;
+}
+.field-holder > input{
+    width: 20vmax;
+    outline: none;
+    border: none;
+    height: 3vmax;
+    font-size: 1vmax;
+    transition: all 0.3s;
+    cursor: text;
+}
+.field-holder > label{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    font-size: 1vmax;
+    color: gray;
+    transition: all 0.3s;
+    cursor: text;
+}
+
+
+input:focus~ .floating-label,
+input:not(:focus):valid ~ .floating-label{
+    color: black;
+    top: -40%;
+    font-size: 0.8vmax;
+    font-weight: 400;
+}
+hr{
+    width: 20vw;
+}
+
+
+.otpInput{
+    display: flex;
+    align-items: center;
+    margin-top: 10%;
+    height: 1.5vmax;
+    outline: none;
+    border: none;
+    font-size: 2vmax;
+    transform: scale(1.5);
+}
+.otpInput > input{
+    width: 1vw !important;
+    height: 1.1vmax;
+}
+.lastHR{
+    width: 15vw;
+}
+
+.submit1{
+    margin-top: 20%;
+    width: 10vmax;
+    height: 2.5vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4A7DFF;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: all 0.5s;
+    color: white;
+    font-size: 1vmax;
+}
+.resendOtp{
+    display: flex;
+    flex-direction: row;
+    font-size: .9vmax;
+}
+
+.resendOtp>button{
+    text-decoration: underline;
+    font-size: 1vmax;
+    background-color: white;
+}
+.resendOtp>button:hover{
+    cursor: pointer;
+}
+.submit1>span{
+    color: white;
+}
+.submit1:hover {
+    background-color: #345DC5;
+}
+input{
+    outline: none;
+}
+@media screen and (max-width:600px){
+    .auth-container1{
+        margin-left: 0;
+    }
+}

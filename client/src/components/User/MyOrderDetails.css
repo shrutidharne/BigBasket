@@ -1,0 +1,92 @@
+.orderBodyDiv {
+  width: 90%;
+  margin: 5%;
+}
+
+.MyorderDetailsPage {
+  display: flex;
+}
+
+.orderBodyDiv > h1 {
+  margin: 3%;
+}
+
+.myOrderDetailsCard {
+  border: 1px solid rgb(198, 198, 198);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-top: 1vmax;
+  padding: 1vmax;
+  align-items: center;
+  color: black;
+}
+
+.myOrderDetailsCard > div > img {
+  width: 5vmax;
+}
+
+.myOrderDetailsCard > p:nth-child(3) {
+  position: absolute;
+  right: 2vmax;
+}
+
+.myOrderDetailsCard > p:nth-child(2) {
+  margin-left: 4%;
+  width: 30vw;
+}
+
+.orderPriceDiv {
+  bottom: 1vmax;
+  color: rgb(83, 83, 83);
+  font-weight: 400;
+  font-size: 1.2vmax;
+  position: absolute;
+  right: 5vmax;
+}
+
+.orderStatus {
+  bottom: 1vmax;
+  color: rgb(83, 83, 83);
+  font-weight: 600;
+  font-size: 1.3vmax;
+  position: absolute;
+  right: 15vmax;
+}
+
+.moreItemsDiv {
+  border: 1px solid rgb(83, 83, 83);
+  border-radius: 100%;
+  color: rgb(83, 83, 83);
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5vmax;
+  font-weight: 500;
+  justify-content: center;
+  text-align: center;
+  width: 4vmax;
+  height: 4vmax;
+  margin-left: 0.5vmax;
+}
+
+@media screen and (max-width: 750px) {
+  .MyorderDetailsPage {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .orderStatus {
+    bottom: 3vmax;
+    right: 4.5vmax;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .orderPriceDiv {
+    right: 3.4vmax;
+  }
+}

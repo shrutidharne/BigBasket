@@ -1,0 +1,192 @@
+.mainDiv1 {
+  /* margin-top: 5vmax; */
+  /* margin-left: 10%; */
+  width: 88vw;
+}
+.no-products {
+  margin-top: 20%;
+  margin-bottom: 20%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font: 100 1vmax "Roboto";
+}
+.productsHeading {
+  margin: 2vmax auto;
+  width: 15vw;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+  padding: 2vmax;
+  color: rgba(0, 0, 0, 0.612);
+  font: 500 1.5vmax "Roboto";
+  text-align: center;
+}
+.products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 5vmax;
+  justify-content: center;
+}
+.paginationBox {
+  display: flex;
+  justify-content: center;
+  margin: 6vmax;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+.page-item {
+  background-color: white;
+  list-style: none;
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  padding: 1vmax 1.5vmax;
+  transform: all 0.5s;
+  cursor: pointer;
+}
+.page-item:last-child {
+  border-radius: 0 5px 5px 0;
+}
+.page-link {
+  text-decoration: none;
+  font: 300 0.8vmax "Roboto";
+  color: rgb(80, 80, 80);
+  transition: all 0.5s;
+}
+
+.page-item:hover {
+  background-color: rgb(212, 211, 211);
+}
+
+.pageItemActive {
+  background-color: #db5a5a;
+}
+.pageLinkActive {
+  color: white;
+}
+.filterBox {
+  width: 12vw;
+  display: flex;
+  flex-direction: column;
+  margin: 5% 0 5% 5%;
+}
+.filterBoxSkeleton{
+  width: 13vw;
+  margin: 5% 0 5% 5%;
+}
+.noProducts {
+  display: flex;
+  justify-content: space-between;
+}
+.no-products {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+.no-products > h1 {
+  font-size: 2vmax;
+}
+.filterBox > span {
+  width: 12vmax;
+}
+.productsWrapper {
+  display: flex;
+  /* align-items: center; */
+}
+.categoryBox {
+  display: flex;
+  flex-direction: column;
+  width: 12vw;
+}
+.category-link {
+  list-style: none;
+  color: rgba(0, 0, 0, 0.541);
+  font: 400 1.2vmax "Roboto";
+  margin: 0.4vmax;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* transition: all 0.2s; */
+}
+.category-link > label {
+  cursor: pointer;
+}
+.category-link > label > input {
+  transform: scale(1.2);
+  margin: 2%;
+}
+
+.filterBox > fieldset {
+  margin-top: 2vmax;
+  border: 1px solid black;
+  padding: 0.8vmax;
+}
+.filterBox > fieldset > span {
+  width: 10vmax;
+}
+.rating-legend {
+  font-size: 2vmax;
+}
+.priceInput {
+  display: flex;
+  height: 1.5vmax;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10% 0;
+}
+.priceInput > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.priceInput > p {
+  font-size: 1vmax;
+}
+.priceInput > div > input {
+  width: 20%;
+  height: 100%;
+  font-size: 1vmax;
+}
+.priceInput > button {
+  background-color: #26a541;
+  padding: 2%;
+  border-radius: 100%;
+  color: white;
+}
+
+
+@media screen and (max-width: 600px) {
+  .filterBox {
+    margin: 1%;
+  }
+  .categoryBox {
+    width: 15vmax;
+  }
+  .page-link {
+    font: 300 1.7vmax "Roboto";
+  }
+  .category-link {
+    font: 400 1.8vmax "Roboto";
+  }
+  .mainDiv1 {
+    width: 75%;
+    margin-left: 5vmax;
+    margin-top: 0;
+  }
+  .products {
+    width: 100%;
+    padding: 0;
+  }
+
+  .priceInput {
+    width: 14vmax;
+    flex-direction: column;
+    padding: 3vmax 0;
+    z-index: 2;
+  }
+  .priceInput > div {
+    margin-bottom: 5%;
+  }
+}

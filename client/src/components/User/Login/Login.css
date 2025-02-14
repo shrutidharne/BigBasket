@@ -1,0 +1,63 @@
+.auth-container2 {
+  transform: scale(1.1);
+  margin-bottom: 4%;
+  margin-left: 10%;
+  margin-top: 0.5%;
+  width: 22vmax;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8%;
+  height: 30vmax;
+}
+.auth-container2 > h2 {
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+.auth-container2 > p {
+  padding: 3% 0;
+}
+.auth-container2 > div {
+  display: flex;
+  flex-direction: row;
+  font-size: 0.9vmax;
+}
+.auth-container2 > div > button {
+  text-decoration: underline;
+  background-color: white;
+
+  font-size: 1vmax;
+  /* color: black; */
+}
+.lastHR {
+  margin-bottom: 5%;
+}
+
+.otpInput {
+  margin-top: 10%;
+  height: 1.5vmax;
+  outline: none;
+  border: none;
+  font-size: 2vmax;
+  transform: scale(2);
+  /* margin-left: 75%; */
+  margin-bottom: 3%;
+}
+.otpInput > input {
+  width: 1vw !important;
+  height: 1.1vmax;
+  font-size: 1vmax;
+}
+input {
+  outline: none;
+}
+.submit1 {
+  margin-top: 5%;
+}
+@media screen and (max-width: 600px) {
+  .auth-container2 {
+    margin-left: 0;
+  }
+}

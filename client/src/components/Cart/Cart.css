@@ -1,0 +1,301 @@
+.cartbodyDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.cartProduct {
+  display: flex;
+  flex-direction: row;
+  height: 14vmax;
+  margin: 2% 0;
+  position: relative;
+}
+.cartProduct > a {
+  color: black;
+  margin-right: 0.4%;
+}
+.cartProduct > a > img {
+  height: 10vmax;
+}
+
+.myCart {
+  margin: 2% 0 3% 3%;
+}
+
+hr {
+  width: 100%;
+}
+
+.orderTotalParentDiv {
+  display: flex;
+  flex-direction: column;
+
+  width: 30vmax;
+}
+
+.orderTotalDiv {
+  border: 1px solid rgb(154, 154, 154);
+  border-right: 10%;
+  border-radius: 30px;
+  height: 55vh;
+}
+
+.orderTotalDiv > h1 {
+  margin-top: 5%;
+  margin-left: 10%;
+  width: 90%;
+}
+
+.orderTotalDiv > p {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 10% 10% 5% 10%;
+  width: 90%;
+}
+
+.orderTotalDiv > p > h5 {
+  font-weight: 400;
+}
+.orderTotalDiv > p > h4 {
+  margin-right: 20%;
+}
+
+.orderTotalDiv > p > p {
+  margin-right: 20%;
+}
+
+.orderTotalDiv > hr {
+  width: 80%;
+  margin: 10%;
+}
+
+.placeOrderLink {
+  border: 1px solid rgb(154, 154, 154);
+  border-radius: 50px;
+  background-color: rgb(38, 165, 65);
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: large;
+  text-align: center;
+  margin-top: 10%;
+  height: 8vh;
+  width: 100%;
+  transition: all 0.5s;
+}
+.placeOrderLink:hover {
+  background-color: rgb(32, 135, 54);
+}
+
+.productListDiv {
+  border: 1px solid rgb(154, 154, 154);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  width: 60%;
+  margin-bottom: 2%;
+}
+.priceDiv {
+  width: 10vmax;
+  position: absolute;
+  bottom: 0;
+  right: 66%;
+  height: 10vmax;
+}
+.priceDiv > p:nth-child(3) {
+  margin-top: 10%;
+  margin-left: 2%;
+}
+.priceDiv > p:nth-child(2) {
+  text-align: center;
+  background-color: rgb(198, 64, 64);
+  border-radius: 3px;
+  padding: 0.3vmax;
+  /* border: 1px solid black; */
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 15%;
+  margin-left: 2%;
+  width: 4vmax;
+  font-size: 1vmax;
+  transition: all 0.5s;
+}
+.priceDiv > p:nth-child(2):hover {
+  background-color: rgb(255, 0, 0);
+}
+.cartItemRemove {
+  text-align: center;
+  background-color: rgb(198, 64, 64);
+  border-radius: 3px;
+  padding: 0.3vmax;
+  /* border: 1px solid black; */
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 15%;
+  margin-left: 2%;
+  width: 4vmax;
+  font-size: 1vmax;
+}
+.quantityDiv1 {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  height: 2.5vmax;
+  width: 9vmax;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.quantityDiv1 > button {
+  outline: none;
+  transition: all 0.3s;
+  font-size: 2vmax;
+}
+.quantityDiv1 > input {
+  font-size: 1.25vmax;
+}
+.quantityDiv1 > button:hover {
+  background-color: rgb(212, 208, 208);
+}
+
+.noItems > svg {
+  color: red;
+  height: 20vh;
+  width: 20vw;
+}
+
+.noItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+  text-align: center;
+}
+
+.browseProducts {
+  background-color: rgba(56, 56, 56, 0.803);
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 7vh;
+  justify-content: center;
+  width: 15vw;
+  transition: all 0.5s;
+}
+.placeOrderStrip {
+  display: flex;
+  background-color: grey;
+  justify-content: space-around;
+  height: 10vmax;
+  width: 100%;
+  align-content: center;
+  /* justify-content: center; */
+  position: fixed;
+  align-items: center;
+  bottom: 0%;
+  z-index: 1001;
+  color: white;
+  display: none;
+}
+.placeOrderStrip > div {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.placeOrderStrip > div > h5 {
+  margin-right: 3%;
+  width: 10vmax;
+}
+.placeOrderStrip > button {
+  border: 1px solid rgb(154, 154, 154);
+  border-radius: 50px;
+  background-color: rgb(38, 165, 65);
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: large;
+  text-align: center;
+  width: 20vmax;
+  height: 5vmax;
+  font-size: 2vmax;
+}
+.browseProducts:hover {
+  background-color: rgba(16, 16, 16, 0.8);
+}
+.invisible {
+  display: none;
+}
+@media screen and (max-width: 750px) {
+  .myCart {
+    text-align: center;
+  }
+  .invertedInvisible {
+    display: none;
+  }
+  .cartbodyDiv {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .invisible {
+    display: block;
+  }
+  .orderTotalParentDiv {
+    margin: 5% 0;
+    width: 80%;
+  }
+  .orderTotalDiv {
+    height: 40vmax;
+    font-size: 2vmax;
+  }
+  .productListDiv {
+    width: 80%;
+    border: none;
+  }
+  .cartProduct > a > p {
+    font-size: 2vmax;
+  }
+  .priceDiv {
+    position: absolute;
+    display: flex;
+    left: 0;
+    bottom: 0%;
+    height: auto;
+    width: 60%;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2vmax;
+  }
+  .priceDiv > h3 {
+    margin: 0;
+  }
+  .priceDiv > p:nth-child(2) {
+    margin-top: 0;
+  }
+  .priceDiv > p:nth-child(3) {
+    margin-top: 0;
+  }
+  .placeOrderLink {
+    display: none;
+  }
+  .placeOrderStrip {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .cartProduct {
+    height: 13vmax;
+  }
+}

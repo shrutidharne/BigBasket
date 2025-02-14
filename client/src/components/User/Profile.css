@@ -1,0 +1,222 @@
+.profileContainer {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  background-color: white;
+}
+
+.profileContainer > div {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.addressInfo > p > b {
+  color: black;
+  font-family: Tahoma;
+}
+
+.profileContainer > div:nth-child(1) > h1 {
+  color: rgba(0, 0, 0, 0.555);
+  font: 500 2.2vmax "Roboto";
+  transform: translateX(-10vmax) translateY(-2vmax);
+}
+
+.profileContainer > div:nth-child(1) > img {
+  width: 20vmax;
+  border-radius: 100%;
+  transition: all 0.5s;
+}
+
+.profileContainer > div:nth-child(1) > img:hover {
+  transform: scale(1.05);
+}
+
+.profileContainer > div:first-child > a {
+  border: none;
+  background-color: #26a541;
+  font: 400 1vmax "Roboto";
+  color: white;
+  text-decoration: none;
+  padding: 0.5vmax;
+  width: 30%;
+  margin: 4vmax;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.profileContainer > div:first-child > a:hover {
+  background-color: #19742d;
+}
+
+.profileContainer > div:last-child {
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 5vmax;
+  box-sizing: border-box;
+}
+
+.profileContainer > div:last-child > div > h4 {
+  color: black;
+  font: 400 1.2vmax "Roboto";
+}
+.addressInfo {
+  position: relative;
+  border: 1px solid rgba(128, 128, 128, 0.58);
+  border-radius: 5px;
+  padding: 2%;
+}
+.addressInfo > div {
+  display: flex;
+  flex-direction: row;
+}
+.addressInfo > div > div {
+  display: flex;
+  flex-direction: row;
+  right: 3%;
+  top: 3%;
+
+  position: absolute;
+}
+.addressInfo > div > div > a {
+  color: black;
+  margin: 0 3%;
+}
+
+.addressInfo > div > h4 {
+  color: black;
+  font: 400 1.2vmax "Roboto";
+}
+
+.profileContainer > div:last-child > div > p {
+  color: rgba(0, 0, 0, 0.418);
+  font: 400 1vmax Tahoma;
+  margin: 0.2vmax;
+}
+
+.profileContainer > div:last-child > div:last-child {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.profileContainer > div:last-child > div:last-child > a,
+.addAdddress {
+  border: none;
+  background-color: rgb(68, 68, 68);
+  font: 400 1vmax "Roboto";
+  color: white;
+  text-decoration: none;
+  padding: 0.5vmax;
+  text-align: center;
+  transition: all 0.5s;
+  margin: 1vmax 0;
+}
+.shippingHeading1 {
+  text-align: center;
+  color: black;
+  font-size: 400;
+  border-bottom: 1px solid black;
+  margin: 0% 10% 5% 0%;
+  width: 50%;
+}
+.shippingBox1 {
+  background-color: white;
+  box-sizing: border-box;
+  width: 35vw;
+}
+.shippingForm1 {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.addAddressButton {
+  width: 8vmax;
+  color: green;
+}
+.shippingForm1 > div > input {
+  padding: 1vmax 4vmax;
+  border: 1px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 5% 0;
+  font: 300 0.9vmax Tahoma;
+  align-items: center;
+  width: 100%;
+}
+.shippingForm1 > div > select {
+  padding: 1vmax 4vmax;
+  border: 1px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 5% 0;
+  font: 300 0.9vmax Tahoma;
+  align-items: center;
+  width: 100%;
+}
+.shippingForm1 > div {
+  position: relative;
+}
+.shippingForm1 > div > svg {
+  position: absolute;
+  transform: translateX(1vmax);
+  font-size: 1.6vmax;
+  color: rgba(0, 0, 0, 0.631);
+  top: 30%;
+}
+
+.profileContainer > div:last-child > div:last-child > a:hover,
+.addAdddress:hover {
+  background-color: rgb(31, 31, 31);
+}
+
+@media screen and (max-width: 600px) {
+  .profileContainer {
+    flex-direction: column;
+  }
+
+  .profileContainer > div:first-child > h1 {
+    font: 500 3.2vmax "Roboto";
+    transform: translateY(-2vmax);
+  }
+
+  .profileContainer > div:first-child > a {
+    font: 400 1.7vmax "Roboto";
+    padding: 1vmax;
+  }
+
+  .profileContainer > div:last-child {
+    text-align: center;
+    align-items: center;
+  }
+
+  .profileContainer > div:last-child > div > h4 {
+    font: 400 2.5vmax "Roboto";
+  }
+
+  .profileContainer > div:last-child > div > p {
+    font: 400 2vmax Tahoma;
+    margin: 0.5vmax 0;
+  }
+
+  .profileContainer > div:last-child > div:last-child > a,
+  .addAdddress {
+    font: 400 1.8vmax "Roboto";
+    padding: 1vmax;
+    margin: 2vmax 0;
+  }
+
+  .profileContainer {
+    margin-top: 5%;
+  }
+
+  .shippingBox1 {
+    width: auto;
+    height: auto;
+  }
+}

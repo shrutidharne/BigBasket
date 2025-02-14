@@ -1,0 +1,125 @@
+.confirmOrderPage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: white;
+  height: 100%;
+}
+
+.confirmshippingArea {
+  /* display: flex; */
+  margin-top: 0.7%;
+  width: 30vmax;
+}
+.confirmshippingArea > p,.orderItemsText {
+  font: 600 2vmax "Roboto";
+  color: rgb(97, 95, 95);
+  margin: 3% 0;
+}
+.toggleClassWhenDelivered{
+  margin-left: 5%;
+  margin-top: 5%;
+  display: flex;
+  width: 100%;
+}
+.orderDetailsContainerBox > div {
+  display: flex;
+}
+.orderDetailsContainerBox > div > p,
+.orderDetailsContainerBox > div > span {
+  padding: 2% 1%;
+}
+.orderDetailsContainerBox > div > p {
+  font-weight: 500;
+}
+.confirmCartItems {
+  display: flex;
+  flex-direction: column;
+}
+.confirmCartItemsContainer {
+  border: 1px solid rgb(154, 154, 154);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  width: 45vmax;
+  margin-bottom: 2%;
+}
+.confirmCartItemsContainer >div{
+  display: flex;
+  flex-direction: row;
+  height: 10vmax;
+  margin: 1% 0;
+  position: relative;
+  width: 45vmax;
+}
+.confirmCartItemsContainer >div > img{
+    width: 10vmax;
+    height: 10vmax;
+}
+.confirmCartItemsContainer > div > a{
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    height: 1vmax;
+    font-size: 1vmax;
+}
+.confirmCartItemsContainer > div > span{
+    position: absolute;
+    bottom:  5%;
+    right: 5%;
+    font-size: 1.3vmax;
+}
+.updateOrderForm {
+  margin: 5vmax 0;
+  padding: 3vmax;
+  background-color: white;
+}
+
+.updateOrderForm > div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.updateOrderForm > div > select {
+  padding: 1vmax 4vmax;
+  margin: 2rem 0;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  border-radius: 4px;
+  font: 300 0.9vmax cursive;
+  outline: none;
+}
+
+.updateOrderForm > div > svg {
+  position: absolute;
+  transform: translateX(1vmax);
+  font-size: 1.6vmax;
+  color: rgba(0, 0, 0, 0.623);
+}
+
+
+@media screen and (max-width: 600px) {
+  .updateOrderForm {
+    padding: 5vmax;
+  }
+
+  .updateOrderForm > div > select {
+    padding: 2.5vmax 5vmax;
+    font: 300 1.7vmax cursive;
+  }
+  .confirmCartItemsContainer > div > a{
+
+    font-size: 1.3vmax;
+}
+  .updateOrderForm > div > svg {
+    font-size: 2.8vmax;
+  }
+}
+@media screen and (max-width:550px) {
+  .confirmOrderPage{
+    flex-direction: column;
+    align-items: center;
+  }
+}

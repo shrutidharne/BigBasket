@@ -1,0 +1,357 @@
+a {
+  text-decoration: none;
+}
+
+button {
+  text-decoration: none;
+  border: none;
+}
+
+.add {
+  border: 1px solid rgb(143, 141, 141);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 30px;
+  padding-top: -10%;
+  text-align: center;
+  width: 33.3%;
+  align-items: center;
+}
+
+.addressDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 5%;
+}
+
+.address {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 50%;
+  margin-top: 5%;
+}
+
+.addToCartButton {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  height: 3vmax;
+  margin-left: 10%;
+  position: relative;
+  width: 10vmax;
+  cursor: pointer;
+  background-color: rgb(38, 165, 65);
+  border: 1px solid rgb(143, 141, 141);
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.redColor {
+  color: red;
+}
+
+.greenColor {
+  color: rgb(52, 183, 52);
+}
+
+.addToCartButton > p {
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  font-size: 1vmax;
+  text-align: center;
+}
+
+.addToCartButton:hover {
+  background-color: rgb(32, 135, 54);
+}
+
+.cartDiv {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 10vh;
+  margin-top: 5%;
+  width: 100%;
+}
+
+.descriptionDiv {
+  margin: 5% 1% 0 0%;
+  width: 30vmax;
+  height: 90vh;
+}
+
+.descriptionDiv > h3 {
+  margin: 0px;
+  margin: 1% 0 5% 0;
+}
+
+.descriptionDiv > h2 {
+  margin: 0px;
+  margin: 1% 0 5% 0;
+}
+
+.descriptionDiv > hr {
+  width: 100%;
+  margin-top: 5%;
+}
+
+.imageDiv {
+  border-radius: 30px;
+  box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.1);
+  margin: 5% 6% 0 3%;
+  width: 38vmax;
+  height: 42vmax;
+  text-align: center;
+}
+
+.carousel-img {
+  border-radius: 30px;
+  height: 40vmax;
+}
+
+.minus {
+  border: 1px solid rgb(143, 141, 141);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 40px;
+  padding-top: -10%;
+  text-align: center;
+  width: 33.3%;
+  align-items: center;
+}
+
+.number {
+  border: 1px solid rgb(143, 141, 141);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 20px;
+  padding-top: -10%;
+  text-align: center;
+  width: 33.3%;
+  align-items: center;
+}
+
+.productBrand {
+  margin-bottom: 5%;
+}
+
+.productBrand b {
+  font-size: 1.1vmax;
+  margin-left: 1%;
+
+  font-weight: 500;
+  color: rgb(46, 168, 8);
+  font-family: "Roboto";
+}
+
+.productDiv {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.productDescriptionDiv {
+  width: 95%;
+  margin-left: 2%;
+}
+
+.productDescriptionDiv > hr {
+  width: 100%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.productDescriptionDiv > h1 {
+  /* margin-top: 5%; */
+  margin-bottom: 5%;
+}
+
+.productsSlide {
+  display: flex;
+  margin-left: 2%;
+  width: 95%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  height: 28vmax;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.productsSlide::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+.productsSlide::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.productsSlide::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.311);
+  border-radius: 8px;
+}
+
+.productsSlide::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.507);
+}
+.descriptionDiv > a {
+  display: flex;
+  align-items: top;
+  color: black;
+}
+.descriptionDiv > a > p {
+  margin-top: 1%;
+  margin-left: 1%;
+}
+.rating {
+  margin-bottom: 3%;
+}
+.quantityDiv {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  height: 3vmax;
+  width: 10vmax;
+}
+
+.quantityDiv > button {
+  outline: none;
+  transition: all 0.3s;
+}
+
+.quantityDiv > button:hover {
+  background-color: rgb(212, 208, 208);
+}
+
+.relatedProductsDiv {
+  margin: 2%;
+}
+.submitReviewDiv {
+  margin: 2%;
+  display: flex;
+}
+.submitReviewDiv > button {
+  margin-left: 5%;
+  background-color: tomato;
+  border-radius: 5px;
+  padding: 1%;
+  transition: all 0.5s;
+  color: white;
+  font: 400 1vmax "Roboto";
+}
+.submitReviewDiv > button:hover {
+  background-color: rgb(216, 77, 45);
+}
+
+.submitDialog {
+  display: flex;
+  flex-direction: column;
+}
+.submitDialogTextArea {
+  border: 1px solid rgba(0, 0, 0, 0.817);
+  margin: 1vmax 0;
+  outline: none;
+  padding: 1rem;
+  font: 400 1rem "Roboto";
+}
+
+.reviewsDiv {
+  display: flex;
+  overflow-x: auto;
+  flex-direction: row;
+  margin-left: 2%;
+  /* width: 100%; */
+}
+
+.reviewsDiv::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+.reviewsDiv::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.reviewsDiv::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.311);
+  border-radius: 8px;
+}
+
+.reviewsDiv::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.507);
+}
+
+.reviewCard {
+  position: relative;
+  flex: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.226);
+  border: 1px solid rgba(56, 56, 56, 0.116);
+  width: 30vmax;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1vmax;
+  padding: 3vmax;
+}
+.reviewCard > img {
+  width: 5vmax;
+}
+.reviewCard > p {
+  color: rgba(0, 0, 0, 0.836);
+  font: 600 0.9vmax "Roboto";
+}
+.reviewCard > svg {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  cursor: pointer;
+}
+
+.reviewCardComment {
+  color: rgba(0, 0, 0, 0.445);
+  font: 500 1vmax "Roboto";
+}
+
+.noReviews {
+  font: 400 1.3vmax "Gill Sans";
+  text-align: center;
+  color: rgba(0, 0, 0, 0.548);
+}
+@media screen and (max-width: 750px) {
+  .productDiv {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .descriptionDiv {
+    width: 80%;
+    height: auto;
+  }
+  .cartDiv {
+    margin-top: 1%;
+  }
+  .submitReviewDiv > button {
+    font-size: 1.5vmax;
+  }
+  .descriptionDiv > hr {
+    margin-top: 0%;
+  }
+  
+  .addressDiv{
+    width: 100%;
+  }
+}

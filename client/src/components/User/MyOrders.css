@@ -1,0 +1,93 @@
+.arrowForwardDiv {
+  position: absolute;
+  bottom: 2vmax;
+  right: 1vmax;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 50px;
+  height: 3vmax;
+  width: 3vmax;
+  transition: all 0.5s;
+}
+
+.arrowForwardDiv > svg {
+  font-size: 1.2vmax;
+  text-align: center;
+  color: black;
+}
+
+.arrowForwardDiv:hover {
+  background-color: rgb(191, 191, 191);
+}
+
+.orderBodyDiv {
+  width: 90%;
+  margin: 5%;
+}
+
+.orderBodyDiv > h1 {
+  margin: 3%;
+}
+
+.orderCard {
+  border: 1px solid rgb(198, 198, 198);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-top: 1vmax;
+  padding: 1vmax;
+  align-items: center;
+}
+
+.orderCard > div > img {
+  width: 5vmax;
+}
+
+.orderPriceDiv {
+  bottom: 1vmax;
+  color: rgb(83, 83, 83);
+  font-weight: 400;
+  font-size: 1.2vmax;
+  position: absolute;
+  right: 5vmax;
+}
+
+.orderStatus {
+  bottom: 1vmax;
+  color: rgb(83, 83, 83);
+  font-weight: 600;
+  font-size: 1.3vmax;
+  position: absolute;
+  right: 15vmax;
+}
+
+.moreItemsDiv {
+  border: 1px solid rgb(83, 83, 83);
+  border-radius: 100%;
+  color: rgb(83, 83, 83);
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5vmax;
+  font-weight: 500;
+  justify-content: center;
+  text-align: center;
+  width: 4vmax;
+  height: 4vmax;
+  margin-left: 0.5vmax;
+}
+
+@media screen and (max-width: 500px) {
+  .orderStatus {
+    bottom: 3vmax;
+    right: 4.5vmax;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .orderPriceDiv {
+    right: 3.4vmax;
+  }
+}

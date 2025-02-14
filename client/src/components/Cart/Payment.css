@@ -1,0 +1,126 @@
+.mainDiv {
+  width: 59.5vmax;
+  margin: 5% 20%;
+}
+
+.amountPayableDiv {
+  border: 1px solid rgba(57, 57, 57, 0.569);
+  border-radius: 30px;
+  margin-bottom: 2%;
+  width: 56vw;
+}
+
+.amountPayableDiv > h1 {
+  color: rgb(87, 87, 87);
+  padding: 2%;
+  font-size: 1vmax;
+}
+
+.amountPayableDiv > p {
+  margin: 0 0 2% 3%;
+  font-size: 1.8vmax;
+  font-weight: 500;
+}
+.backgroundWhite {
+  background-color: white;
+}
+.paymentBodyDiv {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid rgba(57, 57, 57, 0.544);
+  border-radius: 30px;
+  position: relative;
+  width: 56vw;
+}
+
+.paymentMehtodDiv {
+  align-items: center;
+  background-color: rgba(190, 194, 193, 0.766);
+  border-radius: 30px 0 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  height: 19vmax;
+  width: 15vw;
+}
+
+.paymentMehtodDiv > h1 {
+  color: rgb(87, 87, 87);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 1vmax;
+  height: 10vh;
+  text-align: center;
+  width: 100%;
+}
+
+.paymentMehtodDiv > h1:nth-child(1) {
+  border-radius: 30px 0 0 0;
+}
+
+.paymentMehtodDiv > h1:nth-child(7) {
+  border-radius: 0 0 0 30px;
+}
+
+.paymentMehtodDiv > hr {
+  width: 99%;
+  align-items: center;
+}
+.cashOnDeliveryDiv {
+  position: relative;
+  background-color: rgb(252, 252, 252);
+  height: 19vmax;
+  width: 41vw;
+  border-radius: 0 30px 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cashOnDeliveryDiv > h1 {
+  font-size: 1.3vmax;
+  font-weight: 450;
+  text-align: center;
+  padding: 2%;
+  left: 0;
+}
+
+.cashOnDeliveryDiv > button {
+  margin-top: 18%;
+}
+
+.payButton {
+  border: none;
+  border-radius: 15px;
+  background-color: rgb(38, 165, 65);
+  color: white;
+  font-size: 1.3vmax;
+  font-weight: 500;
+  padding: 1.5%;
+  margin: none;
+  text-decoration: none;
+  width: 25vw;
+}
+
+@media screen and (max-width: 1000px) {
+  .amountPayableDiv {
+    border-radius: 10px;
+  }
+
+  .paymentBodyDiv {
+    border-radius: 10px;
+  }
+
+  .paymentMehtodDiv > h1:nth-child(1) {
+    border-radius: 10px 0 0 0;
+  }
+  .paymentMehtodDiv {
+    border-radius: 10px 0 0 10px;
+  }
+  .paymentMehtodDiv > h1:nth-child(7) {
+    border-radius: 0 0 0 10px;
+  }
+}
